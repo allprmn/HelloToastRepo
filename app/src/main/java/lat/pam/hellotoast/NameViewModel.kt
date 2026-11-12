@@ -4,10 +4,8 @@ import androidx.lifecycle.MutableLiveData
 import androidx.lifecycle.ViewModel
 
 class NameViewModel : ViewModel() {
-    // Create a LiveData with a String
+    // Membuat LiveData dengan tipe Integer yang diberi nilai awal 0
     val currentName: MutableLiveData<Int> by lazy {
-        MutableLiveData<Int>()
+        MutableLiveData<Int>(0)
     }
-
-    // Rest of the ViewModel...
 }
